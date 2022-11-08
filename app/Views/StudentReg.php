@@ -19,7 +19,28 @@
 <section>
   
 <div class="container mt-5 pt-5">
-  <center><h1>SIPM&R Exam Portal</h1></center><br><br>
+  <center><h1>SIPM&R Exam Portal</h1></center><br>
+
+
+
+ <?php 
+           if(session()->getFlashdata('status'))
+           {
+                ?> 
+                        <div class="alert alert-danger alert-dismissible fade show" role="alert">
+  <strong>Hey</strong> <?php echo session()->getFlashdata('status');?>
+  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+
+ <?php 
+
+           }
+ 
+  ?>
+
+
   <center><h2>Register Here</h2></center>
 
 <div class="row">
@@ -98,7 +119,7 @@
 
     <br>
 
-Upload Photo<input type="file" id="imgInp" name="stdnt" class="form-control">
+Upload Photo<input type="file" id="imgInp" name="studentPhoto" class="form-control">
 
 <br>
     <div class="form-row">

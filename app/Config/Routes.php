@@ -39,7 +39,7 @@ $routes->set404Override();
 $routes->get('/', 'Home::studentLogin');
 $routes->get('/signup', 'Home::stdtReg');  //function name
 $routes->post('/user/insert-student', 'User::insertReg');
-
+$routes->post('/user/studentLogin', 'User::studentLogin');
 /*
  * --------------------------------------------------------------------
  * Additional Routing

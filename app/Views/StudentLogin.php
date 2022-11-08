@@ -55,13 +55,12 @@
   <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
 </svg></center>
                  
-                 <form action="">
+                 <form action="<?= base_url('/user/studentLogin') ?>" method="POST">
  
-                        
 
-                   <input type="text" pattern="^[0-9]{5}-[0-9]{7}-[0-9]{1}$" title="CNIC should be like this 12345-1234567-1"name="" id="" class="form-control my-3 py-2" placeholder="CNIC" required autofocus>
+                   <input type="text" title="CNIC should be like this 12345-1234567-1"name="loginCnic" id="" class="form-control my-3 py-2" placeholder="CNIC" required autofocus>
                      
-                   <input type="password" name="" id="" class="form-control my-3 py-2" placeholder="Password" required>
+                   <input type="password" name="studentLoginPass" id="" class="form-control my-3 py-2" placeholder="Password" required>
 
                    <div class="text-left">
                      
