@@ -38,9 +38,7 @@
   ?>
 
  
-
-
-  <center><h1>SIMP&R Exam Portal</h1></center><br><br>
+  <center><h1>SIPM&R Exam Portal</h1></center><br><br>
   <center><h2>Login Here</h2></center>
 
   <div class="row">
